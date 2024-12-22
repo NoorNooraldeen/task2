@@ -29,11 +29,21 @@ Console.WriteLine("enter the second num");
 double num2 = Convert.ToDouble((Console.ReadLine()));
 
 if (num1 > num2)
-    Console.WriteLine("bigger number is number 1");
-else 
+{
+    Console.WriteLine("bigger number is number 1" + num1);
+}
+else if (num2 > num1)
+{
+    Console.WriteLine("the bigger number is: " + num2);
+}
+else
+{
+    Console.WriteLine("both numbers are equal.");
+}
+    
 
-//3
-Console.WriteLine("what your grade?");
+    //3
+    Console.WriteLine("what your grade?");
 double grade = Convert.ToDouble(Console.ReadLine());
 if (grade >= 80)
     Console.WriteLine("A");
